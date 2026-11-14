@@ -122,7 +122,7 @@ cite { font-style: italic; }
 
 .field { margin-top: 4.5rem; }
 /* Section images sit beside the opening text. */
-.plate { float: right; width: 25%; margin: 0.4rem 0 1rem 1.75rem; }
+.plate { float: right; width: 50%; margin: 0.4rem 0 1rem 1.75rem; }
 .plate img { display: block; width: 100%; height: auto; }
 .plate figcaption { margin-top: 0.5rem; color: var(--muted); font: 400 0.8125rem/1.4 var(--sans); }
 .more { clear: both; }
@@ -177,5 +177,5 @@ cite { font-style: italic; }
   .home { margin-top: 1.5rem; }
   .fields { grid-template-columns: repeat(2, 1fr); }
   .album { grid-template-columns: 1fr; }
-  .plate { width: 40%; margin-left: 1.25rem; }
+  .plate { float: none; width: 100%; margin: 0 0 1.5rem; }
 }
