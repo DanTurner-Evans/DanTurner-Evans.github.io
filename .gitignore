@@ -1,0 +1,8 @@
+# Keep private source material out of the repo; only docs/ is the site.
+.DS_Store
+*.pdf
+!docs/assets/*.pdf
+*.docx
+Semiconductors/
+Photos/
+WebsiteGuide.md
