@@ -4,7 +4,6 @@
   --muted: #5d6373;
   --paint: #2438a6;
   --rule: #dfe1e8;
-  --forest: #1f7a1f;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
 }
@@ -66,14 +65,14 @@ cite { font-style: italic; }
   gap: 0.25rem 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font: 400 1rem/1.5 var(--sans);
+  font: 700 1rem/1.5 var(--sans);
 }
 
 .site-header a { color: var(--ink); text-decoration: none; }
-.site-header a:hover { color: var(--forest); }
-.site-header .wrap > a::before { content: "\2022" / ""; margin-right: 0.5rem; color: var(--forest); }
+.site-header a:hover { color: var(--paint); }
+.site-header .wrap > a::before { content: "\2022" / ""; margin-right: 0.5rem; }
 .site-header nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
-.site-header nav a { color: var(--forest); text-underline-offset: 0.3em; }
+.site-header nav a { text-underline-offset: 0.3em; }
 .site-header nav a:hover,
 .site-header nav a[aria-current="page"] { text-decoration: underline; }
 
