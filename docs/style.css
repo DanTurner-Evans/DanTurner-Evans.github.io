@@ -4,6 +4,7 @@
   --muted: #5d6373;
   --paint: #2438a6;
   --rule: #dfe1e8;
+  --forest: #1f7a1f;
   --serif: "Newsreader", Georgia, "Times New Roman", serif;
   --sans: "Atkinson Hyperlegible", "Helvetica Neue", Arial, sans-serif;
 }
@@ -69,9 +70,12 @@ cite { font-style: italic; }
 }
 
 .site-header a { color: var(--ink); text-decoration: none; }
-.site-header a:hover { color: var(--paint); }
+.site-header a:hover { color: var(--forest); }
+.site-header .wrap > a::before { content: "\2022" / ""; margin-right: 0.5rem; color: var(--forest); }
 .site-header nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
-.site-header nav a[aria-current="page"] { color: var(--paint); }
+.site-header nav a { color: var(--forest); text-underline-offset: 0.3em; }
+.site-header nav a:hover,
+.site-header nav a[aria-current="page"] { text-decoration: underline; }
 
 .site-footer {
   margin-top: 5rem;
