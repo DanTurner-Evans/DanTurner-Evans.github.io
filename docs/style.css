@@ -65,16 +65,15 @@ cite { font-style: italic; }
   gap: 0.25rem 1.5rem;
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-  font: 700 1rem/1.5 var(--sans);
+  font: 400 1rem/1.5 var(--sans);
 }
 
 .site-header a { color: var(--ink); text-decoration: none; }
 .site-header a:hover { color: var(--paint); }
-.site-header .wrap > a::before { content: "\2022" / ""; margin-right: 0.5rem; }
+/* The link for the page you're on is bold with a bullet. */
+.site-header a[aria-current="page"] { font-weight: 700; }
+.site-header a[aria-current="page"]::before { content: "\2022" / ""; margin-right: 0.4rem; color: #000; }
 .site-header nav { display: flex; flex-wrap: wrap; gap: 0.25rem 1.25rem; }
-.site-header nav a { text-underline-offset: 0.3em; }
-.site-header nav a:hover,
-.site-header nav a[aria-current="page"] { text-decoration: underline; }
 
 .site-footer {
   margin-top: 5rem;
